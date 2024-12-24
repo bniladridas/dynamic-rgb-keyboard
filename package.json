@@ -1,0 +1,17 @@
+{
+    "name": "typescript-keyboard",
+    "version": "1.0.0",
+    "description": "Dynamic RGB Keyboard using TypeScript",
+    "main": "index.js",
+    "scripts": {
+        "start": "lite-server",
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "lite-server": "^2.6.1",
+        "typescript": "^5.7.2"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

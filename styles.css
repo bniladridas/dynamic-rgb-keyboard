@@ -1,0 +1,116 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #000428, #004e92);
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+div {
+    margin: 0;
+    padding: 0;
+}
+
+/* Display styling */
+div.display {
+    width: 90%;
+    height: 60px;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #00ffcc;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+/* Keyboard container */
+div.keyboard {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+}
+
+/* Media query for portrait mode on mobile */
+@media (max-width: 600px) {
+    div.keyboard {
+        grid-template-columns: repeat(3, 1fr); /* Adjust columns for portrait mode */
+    }
+}
+
+/* Keys styling */
+button {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #333, #111);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* RGB gradient effect for keys */
+button.rgb {
+    background: linear-gradient(135deg, #ff0000, #ff8000, #ffff00, #80ff00, #00ff80, #00ffff, #0080ff, #8000ff, #ff0080);
+    background-size: 400% 400%;
+    animation: gradientAnimation 2s infinite;
+}
+
+/* Highlight pressed keys */
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    background: #555;
+}
+
+/* Space key layout */
+button.space {
+    grid-column: span 6;
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Footer styling */
+footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
