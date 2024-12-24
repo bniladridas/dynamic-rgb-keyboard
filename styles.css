@@ -31,6 +31,7 @@ div.display {
     border-radius: 10px;
     border: 2px solid #00ffff;
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    transition: all 0.3s ease-in-out;
 }
 
 /* Keyboard container */
@@ -42,7 +43,8 @@ div.keyboard {
     border-radius: 15px;
     background: rgba(0, 0, 0, 0.85);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    max-width: 800px;
+    max-width: 1000px; /* Increase the maximum width */
+    margin-top: 20px;
 }
 
 /* Media query for portrait mode on mobile */
@@ -54,9 +56,7 @@ div.keyboard {
 
 /* Keys styling */
 button {
-    padding: 15px;
-    font-size: 16px;
-    border-radius: 8px;
+    padding: 20px; /* Increase padding for larger keys */
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: #fff;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
@@ -64,6 +64,7 @@ button {
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    font-size: 18px; /* Increase font size */
 }
 
 /* RGB gradient effect for keys */
@@ -82,7 +83,7 @@ button:active {
 
 /* Space key layout */
 button.space {
-    grid-column: span 6;
+    grid-column: span 8; /* Adjust span for larger keyboard */
 }
 
 /* Gradient animation */
