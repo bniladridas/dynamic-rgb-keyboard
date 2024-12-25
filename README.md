@@ -1,13 +1,13 @@
-## Tweet
+## Post
 ![X-mas keyboard](https://github.com/bniladridas/dynamic-rgb-keyboard/raw/main/post.png)
-[X-mas keyboard post by Niladri Das on X](https://x.com/bniladridas/status/1871638937950982164)
+[X-mas keyboard post by Niladri Das on ![X Logo](https://raw.githubusercontent.com/bniladridas/dynamic-rgb-keyboard/main/X.svg)](https://x.com/bniladridas/status/1871638937950982164)
 
 # Keyboard Project
 
 ![Tech Used](https://img.shields.io/badge/Tech-HTML%20%7C%20CSS%20%7C%20JavaScript%20%7C%20TypeScript-blue)
 
 ## Overview
-This project is focused on developing a custom keyboard interface that mimics the look and feel of a real keyboard, complete with RGB animations, keypress handling, and a display for showing keypress [...]
+This project is focused on developing a custom keyboard interface that mimics the look and feel of a real keyboard, complete with RGB animations, keypress handling, and a display for showing keypresses.
 
 ## Features
 - Realistic keyboard layout with responsive keys.
